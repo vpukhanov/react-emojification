@@ -27,7 +27,7 @@ class Header extends Component {
     return (
       <header className="Header">
       	<div className="EmojiBanner" dangerouslySetInnerHTML={{__html: emojiBanner}} />
-        <h1>Emojification</h1>
+        <h1>Emojify Me</h1>
       </header>
     );
   }

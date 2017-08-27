@@ -1,6 +1,6 @@
-# Emojification
+# Emojify Me
 
-Emojification is an app running with [Ruby on Rails API](https://github.com/vpukhanov/rails-emojification) and React frontend.
+"Emojify Me" is an app running with [Ruby on Rails API](https://github.com/vpukhanov/rails-emojification) and React frontend.
 
 It lets you emojify text, which you can then copy and post anywhere.
 
