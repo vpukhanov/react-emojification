@@ -2,7 +2,7 @@
   "name": "react-emojification",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vpukhanov.github.io/react-emojification",
+  "homepage": "https://emojify.website",
   "dependencies": {
     "copy-to-clipboard": "^3.0.8",
     "react": "^15.6.1",
