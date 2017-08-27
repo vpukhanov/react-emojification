@@ -21,7 +21,8 @@ class Main extends Component {
     super(props);
 
     this.state = {
-      translatedText: ''
+      translatedText: '',
+      displayHint: true
     };
 
     this.timeout = null;
@@ -33,6 +34,7 @@ class Main extends Component {
   }
 
   handleTextChange(val) {
+    this.setState({ displayHint: !val });
     clearTimeout(this.timeout);
     this.timeout = setTimeout(this.fetchEmojifiedText.bind(this, val), REQUEST_TIMEOUT);
   }
@@ -68,6 +70,7 @@ class Main extends Component {
           multiline
           onChange={this.handleTextChange}
           floating={false}
+          hint={ this.state.displayHint ? "Enter your text here..." : "" }
         />
         {
           translatedHtml ?
