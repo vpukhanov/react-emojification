@@ -1,0 +1,26 @@
+.Main {
+  text-align: center;
+  font-size: 1.2em;
+
+  margin-top: 2em;
+}
+
+.TextInput {
+	width: 45%;
+	float: left;
+	font-size: 1.2em;
+}
+
+.TextOutput {
+	float: right;
+	width: 45%;
+}
+
+.TextOutput .Output {
+	padding: 1.5em 0;
+
+	text-align: left;
+	user-select: none;
+
+	cursor: default;
+}

@@ -1,0 +1,33 @@
+.Footer {
+  text-align: left;
+
+  border-top: 1px solid #DADEDF;
+  padding: 1em 0em;
+
+  margin-top: 2em;
+
+  color: #707C80;
+
+  font-size: 0.9em;
+  font-weight: x-light;
+}
+
+.Footer .Icon {
+	height: 1em;
+ 	width: 1em;
+ 	margin: 0 .05em 0 .1em;
+	vertical-align: -0.1em;
+}
+
+.Footer .Right {
+  float: right;
+}
+
+.Footer a {
+  color: #C02F1D;
+  text-decoration: none;
+}
+
+.Footer a:hover {
+  text-decoration: underline;
+}
