@@ -1,4 +1,4 @@
-const API_BASE = 'http://emojification-server.herokuapp.com/api/v1';
+const API_BASE = 'https://emojification-server.herokuapp.com/api/v1';
 
 const utils = {
   fetchTranslatedText: (text, cb) => {
