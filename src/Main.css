@@ -11,6 +11,10 @@
 	font-size: 1.2em;
 }
 
+.TextInput.FullWidth {
+  width: 100%;
+}
+
 .TextOutput {
 	float: right;
 	width: 45%;

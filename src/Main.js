@@ -63,23 +63,23 @@ class Main extends Component {
 
     return (
       <div className="Main">
-        <Input className="TextInput"
+        <Input className={"TextInput " + (translatedHtml ? '' : 'FullWidth')}
           type="text"
-          //rows={15}
           multiline
           onChange={this.handleTextChange}
+          floating={false}
         />
-        <div className="TextOutput">
-          <div className="Output"
-               dangerouslySetInnerHTML={{__html: translatedHtml}}/>
-          {
-            this.state.translatedText ?
+        {
+          translatedHtml ?
+            <div className="TextOutput">
+              <div className="Output"
+                   dangerouslySetInnerHTML={{__html: translatedHtml}}/>
               <Button primary raised onMouseUp={this.handleCopyButtonClick}>
                 <CopyIcon /> Copy translated
-              </Button> :
-              null
-          }
-        </div>
+              </Button>
+            </div> :
+            null
+        }
       </div>
     );
   }
