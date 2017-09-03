@@ -7,12 +7,17 @@ import Footer from './Footer';
 
 class App extends Component {
   render() {
+    const showFooter = !window.navigator.standalone;
     return (
       <div className="App">
         <Header />
         <Main />
         <div className="clear"></div>
-        <Footer />
+        {
+          showFooter ?
+            <Footer/> :
+            null
+        }
       </div>
     );
   }
